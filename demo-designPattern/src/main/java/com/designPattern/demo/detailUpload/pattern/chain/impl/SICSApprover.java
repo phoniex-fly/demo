@@ -12,6 +12,7 @@ import com.designPattern.demo.detailUpload.domain.SubbillDO;
 import com.designPattern.demo.detailUpload.domain.SubbillDetailDO;
 import com.designPattern.demo.detailUpload.feign.ISICSfeign;
 import com.designPattern.demo.detailUpload.pattern.chain.DetailApprover;
+import com.designPattern.demo.detailUpload.pattern.strategy.impl.BalanceStrategy;
 
 /**
  *
@@ -63,6 +64,7 @@ public class SICSApprover extends DetailApprover {
 		for (DetailBatchDO detailBatchDO : SICSbatch) {
 			SubbillDO subbillDO = new SubbillDO();
 			subbillDO.setSubbillDetailDOs(new ArrayList<SubbillDetailDO>());
+			subbillDO.setBalance(BalanceStrategy.getBalance(subbillDO));// 使用策略设置余额
 			detailBatchDO.setSubbillDO(subbillDO);
 		}
 	}
