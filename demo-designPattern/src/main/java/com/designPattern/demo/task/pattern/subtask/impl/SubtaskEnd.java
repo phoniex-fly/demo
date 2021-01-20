@@ -13,8 +13,8 @@ import com.designPattern.demo.task.pattern.subtask.SubtaskState;
  * @date: 2021年1月20日 上午11:24:12
  * @Copyright:
  */
-@Component("finish")
-public class SubtaskFinish extends SubtaskState {
+@Component("end")
+public class SubtaskEnd extends SubtaskState {
 
 	@Override
 	public String deal(Subtask task) {

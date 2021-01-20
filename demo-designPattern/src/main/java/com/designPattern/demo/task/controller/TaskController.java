@@ -29,8 +29,12 @@ public class TaskController {
 	 * @param task
 	 */
 	@GetMapping("/deal")
-	public void deal(Task task) {
+	public Task deal() {
+		Task task = new Task();
+		task.setId("0001");
+		task.setState(Task.DEAL);
 		taskService.deal(task);
+		return task;
 	}
 
 	/**
@@ -39,8 +43,12 @@ public class TaskController {
 	 * @param task
 	 */
 	@GetMapping("/submit")
-	public void submit(Task task) {
+	public Task submit() {
+		Task task = new Task();
+		task.setId("0001");
+		task.setState(Task.DEAL);
 		taskService.submit(task);
+		return task;
 	}
 
 	/**
@@ -49,8 +57,12 @@ public class TaskController {
 	 * @param task
 	 */
 	@GetMapping("/back")
-	public void back(Task task) {
+	public Task back() {
+		Task task = new Task();
+		task.setId("0001");
+		task.setState(Task.DEAL);
 		taskService.back(task);
+		return task;
 	}
 
 }

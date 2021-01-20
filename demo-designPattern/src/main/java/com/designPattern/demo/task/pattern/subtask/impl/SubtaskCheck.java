@@ -18,7 +18,7 @@ public class SubtaskCheck extends SubtaskState {
 
 	@Override
 	public String deal(Subtask task) {
-		task.setState(Subtask.FINISH);
+		task.setState(Subtask.END);
 		return "OK";
 	}
 

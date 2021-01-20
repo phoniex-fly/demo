@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.designPattern.demo.task.domain.Task;
 import com.designPattern.demo.task.domain.TaskDetail;
@@ -18,6 +19,7 @@ import com.designPattern.demo.task.service.TaskService;
  * @date: 2021年1月20日 上午10:31:56
  * @Copyright:
  */
+@Service
 public class TaskServiceImpl implements TaskService {
 
 	@Autowired

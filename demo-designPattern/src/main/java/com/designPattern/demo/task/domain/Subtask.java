@@ -12,7 +12,7 @@ public class Subtask {
 
 	public static final String CALCULATE = "calculate";// 计算
 	public static final String CHECK = "check";// 复核
-	public static final String FINISH = "finish";// 处理完成
+	public static final String END = "end";// 处理完成
 
 	private String id;
 
