@@ -1,4 +1,8 @@
-## demo-designPattern为部分设计模式在项目中的实际运用 
+## demo-DDD为领域驱动设计模型在项目中的实践运用
+
+暂无 
+
+## demo-designPattern为部分设计模式在项目中的实践运用 
 
 ### 1、装饰器模式
 
